@@ -22,7 +22,7 @@ Bu web sitesi, Antalya'yı ziyaret etmek veya yakından tanımak isteyenler içi
 
 ## 🛠️ Kullanılan Teknolojiler
 
-- **HTML5:** Anl смыs ve semantik sayfa yapıları, video etiketleri.
+- **HTML5:** semantik sayfa yapıları, video etiketleri.
 - **CSS3:** Modern grid ve flexbox düzenleri, responsive (mobil uyumlu) tasarım, animasyonlar ve geçiş efektleri.
 - **JavaScript (ES6):** Dinamik menü toggle, istatistik sayaçları ve interaktif kullanıcı deneyimi.
 - **Git & Git LFS:** Proje içerisindeki yüksek çözünürlüklü video ve medya dosyalarının verimli şekilde yönetilmesi için Git Large File Storage (LFS) entegrasyonu.
