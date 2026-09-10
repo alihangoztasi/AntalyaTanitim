@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&family=Kalnia:wght@300;500&family=Inter:wght@300;400;600&display=swap');
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0a0a0a;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.container .navbar {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    background: rgba(10, 10, 10, 0.35);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar .logo a {
+    text-decoration: none;
+    font-size: 26px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 4px;
+    transition: color 0.3s;
+}
+
+.navbar .logo a:hover {
+    color: #a78bfa;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 0;
+}
+
+.navbar ul li a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.navbar ul li a.active1,
+.navbar ul li a:hover {
+    background: linear-gradient(135deg, #776cb6, #a78bfa);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(119, 108, 182, 0.4);
+}
+
+/* ===== HAMBURGER ===== */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 1100;
+}
+
+.hamburger span {
+    display: block;
+    width: 26px;
+    height: 2px;
+    background: #fff;
+    border-radius: 2px;
+    transition: all 0.35s ease;
+    transform-origin: center;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+.slider {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity .4s linear;
+}
+
+.active {
+    opacity: 1;
+}
+
+.slide .inner {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    background-color: black;
+    color: #eee;
+    padding: 40px 30px;
+    opacity: 0;
+
+}
+
+.slide.active .inner {
+    opacity: 1;
+
+}
+
+button:focus {
+    outline: 0;
+}
+
+.slide:nth-child(1) {
+    background: url('../images/duden.jpg') no-repeat center/cover;
+}
+
+.slide:nth-child(2) {
+    background: url('../images/olimpos.jpg') no-repeat center/cover;
+}
+
+.slide:nth-child(3) {
+    background: url('../images/kaleici.png') no-repeat center/cover;
+}
+
+
+
+
+.indicators {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    cursor: default;
+}
+
+.indicators button {
+    padding: 10px 20px;
+    font-size: 25px;
+    background-color: #1a1919;
+    color: grey;
+    border: 0;
+}
+
+.indicators button :hover {
+    background: rgb(212, 142, 142);
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+/* ===== RESPONSIVE — MOBILE ===== */
+@media (max-width: 768px) {
+    .container .navbar {
+        padding: 0 20px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar ul {
+        display: none;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: rgba(10, 10, 10, 0.97);
+        backdrop-filter: blur(20px);
+        padding: 20px 0 30px;
+        gap: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        z-index: 999;
+    }
+
+    .navbar ul.open {
+        display: flex;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar ul li a {
+        display: block;
+        padding: 14px 20px;
+        font-size: 16px;
+        border-radius: 0;
+        letter-spacing: 2px;
+    }
+
+    .slide .inner {
+        bottom: 80px;
+        left: 20px;
+        right: 20px;
+        padding: 24px 20px;
+    }
+
+    .slide .inner h1 {
+        font-size: 22px;
+    }
+
+    .slide .inner p {
+        font-size: 13px;
+    }
+}

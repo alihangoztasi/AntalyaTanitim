@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Antalya — Türkiye'nin turizm başkentini keşfedin. Tarih, doğa, lezzet ve konaklama rehberi.">
+    <title>Antalya</title>
+    <link rel="stylesheet" href="../css/giris.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar" id="navbar">
+            <div class="logo">
+                <a href="giris.html">ANTALYA</a>
+            </div>
+            <button class="hamburger" id="nav-toggle" aria-label="Menüyü aç/kapat" aria-expanded="false"
+                aria-controls="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="nav-menu" role="navigation">
+                <li><a href="giris.html" class="active">GİRİŞ</a></li>
+                <li><a href="tarihce.html">TARİHÇE</a></li>
+                <li><a href="gezilecekyerler.html">GEZİLECEK YERLER</a></li>
+                <li><a href="kalinacakyerler.html">KALINACAK YERLER</a></li>
+                <li><a href="lezzetler.html">LEZZETLERİ</a></li>
+            </ul>
+        </div>
+
+        <div id="hero">
+            <video autoplay loop muted playsinline>
+                <source src="../images/video.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+            <div class="content">
+                <div class="hero-text">
+                    <h1 id="head">HOŞ GELDİNİZ</h1>
+                    <p class="p1">ANTALYA &mdash; "Turizmin Başkenti"</p>
+                    <a href="tarihce.html" class="hero-btn">Keşfet</a>
+                </div>
+            </div>
+            <div class="scroll-arrow" id="scrollArrow">
+                <span>&#8964;</span>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="stats-section" id="statsSection">
+        <div class="stats-grid">
+            <div class="stat-card" data-target="3000">
+                <div class="stat-icon">🏛️</div>
+                <div class="stat-number" id="stat1">0</div>
+                <div class="stat-label">Yıllık Tarih</div>
+            </div>
+            <div class="stat-card" data-target="365">
+                <div class="stat-icon">☀️</div>
+                <div class="stat-number" id="stat2">0</div>
+                <div class="stat-label">Gün Güneş</div>
+            </div>
+            <div class="stat-card" data-target="15">
+                <div class="stat-icon">✈️</div>
+                <div class="stat-number" id="stat3">0</div>
+                <div class="stat-label">Milyon+ Yıllık Ziyaretçi</div>
+            </div>
+            <div class="stat-card" data-target="700">
+                <div class="stat-icon">🏖️</div>
+                <div class="stat-number" id="stat4">0</div>
+                <div class="stat-label">km Sahil Şeridi</div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="explore-section">
+        <h2 class="section-title">Antalya'yı Keşfet</h2>
+        <div class="explore-grid">
+            <a href="tarihce.html" class="explore-card">
+                <div class="explore-icon">📜</div>
+                <h3>Tarihçe</h3>
+                <p>3000 yıllık köklü tarihi keşfedin</p>
+                <span class="explore-arrow">→</span>
+            </a>
+            <a href="gezilecekyerler.html" class="explore-card">
+                <div class="explore-icon">🗺️</div>
+                <h3>Gezilecek Yerler</h3>
+                <p>Düden Şelalesi, Olimpos ve daha fazlası</p>
+                <span class="explore-arrow">→</span>
+            </a>
+            <a href="kalinacakyerler.html" class="explore-card">
+                <div class="explore-icon">🏨</div>
+                <h3>Kalınacak Yerler</h3>
+                <p>En lüks otel seçenekleri</p>
+                <span class="explore-arrow">→</span>
+            </a>
+            <a href="lezzetler.html" class="explore-card">
+                <div class="explore-icon">🍽️</div>
+                <h3>Lezzetler</h3>
+                <p>Yöresel tatları tadın</p>
+                <span class="explore-arrow">→</span>
+            </a>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <span class="footer-logo">ANTALYA</span>
+            <span class="footer-copy">© 2024 Antalya Turizm Rehberi</span>
+        </div>
+    </footer>
+
+    <script src="../js/giris.js"></script>
+</body>
+
+</html>
