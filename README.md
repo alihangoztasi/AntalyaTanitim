@@ -31,20 +31,7 @@ Bu web sitesi, Antalya'yı ziyaret etmek veya yakından tanımak isteyenler içi
 
 ## 🚀 Projeyi Çalıştırma
 
-Projeyi yerel bilgisayarınızda çalıştırmak oldukça basittir:
-
-1. **Repoyu klonlayın:**
-   ```bash
-   git clone https://github.com/alihangoztasi/AntalyaTanitim.git
-   cd AntalyaTanitim
-   ```
-
-2. **Git LFS dosyalarını çekin (videolar için):**
-   ```bash
-   git lfs pull
-   ```
-
-3. **Çalıştırın:**
+. **Çalıştırın:**
    `html/giris.html` dosyasını herhangi bir web tarayıcısında (Chrome, Edge, Firefox vb.) açın veya VS Code **Live Server** eklentisiyle başlatın.
 
 ---
